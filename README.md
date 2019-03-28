@@ -293,7 +293,7 @@ and any other SM which assumes the same substitution model scheme (shown above t
 as the preferred SM, but different model tree topology.\
 See PART2 of the report (above) for the full list of MS2 values.
 
-Subtable 1\
+Subtable 1
 
 |               | GTR__G  | HKY__G  | GTR__N  |
 | ------------- |:------- |:------- |:------- |
@@ -301,14 +301,14 @@ Subtable 1\
 | EM:11GTR__G   |    1    |    1    | 1       |
 
 
-Subtable 2\
+Subtable 2
 
 |               | GTR__G  | HKY__G  | GTR__N  |
 | ------------- |:------- |:------- |:------- |
 | EM:10GTR__G   |    8    | 136     | 1332    |
 | EM:11GTR__G   |    11   | 166     | 1657    |
 
-Subtable 3\
+Subtable 3
 
 |               | GTR__G  | HKY__G  | GTR__N  |
 | ------------- |:------- |:------- |:------- |
