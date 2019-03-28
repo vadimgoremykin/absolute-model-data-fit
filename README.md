@@ -121,12 +121,12 @@ Each MODELNAME, MODELNAME1 and MODELNAME2 should be 8 characters in length, of w
 two are digits (tree code), designating model tree topology and the rest 6 characters designate\
 the substitution model used to generate the corresponding replicates, for example: 10GTR+GI
 
-Note 2: In the comparisons involving representation of the observed data by replicates:\
-- The set of model tree topologies (T set) should be the same for all sets of SMs assuming different\
-  substitution model specifications.\
-- The set of SMs which shares substitution model specification with EM(s) should be included into analysis.\
-- All EMs should share a distinct substitution model component (e.g. GTR+GI).\
-- Each of tree codes should designate the same, distinct tree topology.\
+Note 2: In the comparisons involving representation of the observed data by replicates: \
+- The set of model tree topologies (T set) should be the same for all sets of SMs assuming different \
+  substitution model specifications. \
+- The set of SMs which shares substitution model specification with EM(s) should be included into analysis. \
+- All EMs should share a distinct substitution model component (e.g. GTR+GI). \
+- Each of tree codes should designate the same, distinct tree topology. \
 - EM model tree topologies should be present in the T set.
 
 __________
@@ -162,7 +162,7 @@ model: 12GTR__N test value: 22342.3701793176\
 model: 14GTR__N test value: 24024.3092445402\
 model: 15GTR__N test value: 24934.9691206518
 
-Best model is 10GTR__G, test value: 7.00545534776865\
+Best model is 10GTR__G, test value: 7.00545534776865 \
 __________
 
 If the empirical model (EM) is represented by replicates, the test_stage2.pl outputs a self-explanatory\
