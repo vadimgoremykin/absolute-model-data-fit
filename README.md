@@ -291,18 +291,29 @@ as the preferred SM, but different model tree topology.\
 See PART2 of the report (above) for the full list of MS2 values.
 
 Subtable 1\
-        GTR__G    HKY__G    GTR__N\
-EM:10GTR__G    1    1    1\
-EM:11GTR__G    1    1    1
+
+|               | GTR__G  | HKY__G  | GTR__N  |
+| ------------- |:-------:| -------:| -------:|
+| EM:10GTR__G   | 1       | 1       | 1       |
+| EM:11GTR__G   | 1       | 1       | 1       |
+
+|               | GTR__G  | HKY__G  | GTR__N  |
+| ------------- |:-------:| -------:| -------:|
+| EM:10GTR__G   |    1    |    1    | 1       |
+| EM:11GTR__G   |    1    |    1    | 1       |
+
 
 Subtable 2\
-        GTR__G    HKY__G    GTR__N\
-EM:10GTR__G    8    136    1332\
-EM:11GTR__G    11    166    1657
+
+|	        |GTR__G  |HKY__G |GTR__N|
+|EM:10GTR__G	|8	 |136	 |1332  |
+|EM:11GTR__G	|11	 |166	 |1657  |
 
 Subtable 3\
-        GTR__G    HKY__G    GTR__N\
-EM 10GTR__G    100    100    100\
-EM 11GTR__G    100    100    100
+
+|	        |GTR__G  |HKY__G |GTR__N|
+|EM 10GTR__G	|100	 |100	 |100	|
+|EM 11GTR__G	|100	 |100	 |100	|
 
 The mean over values in above subtable is: 100.00
+
