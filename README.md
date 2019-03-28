@@ -63,7 +63,7 @@ command line synopsis:
    Note: The performance of the test has been tested with DNA data alphabet only. Other options are added for\
    exploratory purposes. If the alphabet type is not specified, the script assumes the DNA alphabet by default.\
 -p (optional) sets a P factor value (default 10,000)\
--g (optional) enables calculation of full Gelfand and Ghosh statistic\
+-g (optional) enables calculation of full Gelfand and Ghosh statistic
 __________
 
 Output format of test_stage1.pl script
