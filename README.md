@@ -292,6 +292,7 @@ model components shown above the subtable.
 and any other SM which assumes the same substitution model scheme (shown above the subtable)\
 as the preferred SM, but different model tree topology.\
 See PART2 of the report (above) for the full list of MS2 values.
+
 Subtable 1\
 
 |               | GTR__G  | HKY__G  | GTR__N  |
