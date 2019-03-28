@@ -1,6 +1,6 @@
 # absolute-model-data-fit
 The repository contains Perl scripts for assessment of absolute fit of evolutionary models -\
-test_stage1.pl and test_stage2.pl published in <place for citation>.\
+test_stage1.pl and test_stage2.pl published in (place for citation).\
 Please see the original article for detailed test description and examples.
 
 The test compares observed data (multiple sequence alignment of DNA sequences, "OD") evolved\
