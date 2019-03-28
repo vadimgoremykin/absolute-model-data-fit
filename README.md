@@ -86,7 +86,7 @@ Tvalue_GGg: 294.473066605363 118.101989045201\
 Tvalue_TTC: 0.0210386510130374 0.0263469766498732
 
 The leftmost values represent above statistics calculated based on replicate 1, the next values\
-represent above statistics calculated based on replicate 2, etc.\
+represent above statistics calculated based on replicate 2, etc.
 ______________________________________________________________________________________________________
 
 The second stage of the test is performed by test_stage2.pl script, which should be run\
