@@ -39,6 +39,8 @@ OD and the replicates should be in fasta or sequential phylip format (1 sequence
 A test file with a list of filenames of T set constraints, in newick format, one tree file name per\
 line, should be prepared too.
 
+## The first stage
+
 When the above prerequisites are met, the first stage of the test, performed by test_stage1.pl\
 script, can be conducted.
 
@@ -70,7 +72,7 @@ command line synopsis:
 </pre>
 __________
 
-## Output format of test_stage1.pl script
+### Output format of test_stage1.pl script
 
 In the case of EM representation by alignment of biological sequences, each output file has the following format:
 
@@ -95,6 +97,8 @@ Tvalue_TTC: 0.0210386510130374 0.0263469766498732
 The leftmost values represent above statistics calculated based on replicate 1, the next values\
 represent above statistics calculated based on replicate 2, etc.
 ______________________________________________________________________________________________________
+
+## The second stage
 
 The second stage of the test is performed by test_stage2.pl script, which should be run\
 in the directory containing the files produced by test_stage1.pl script.
@@ -139,7 +143,7 @@ Note 2: In the comparisons involving representation of the observed data by repl
 </pre>
 __________
 
-## Output format of test_stage2.pl script:
+### Output format of test_stage2.pl script:
 
 If the empirical model (EM) is represented by one multiple sequence alignment, the test_stage2.pl outputs\
 a table containing SM-specific T values sorted in ascending order and corresponding SM designations.\
