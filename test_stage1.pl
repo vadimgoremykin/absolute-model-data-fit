@@ -1193,17 +1193,6 @@ else
    }   
 }   
    
-   
-   
-   
-#   for $rep1 (keys %m_rep)
-#   {
-#      if ($#{$m_obs{$rep}} != $#{$m_rep{$rep1}})
-#      {
-#         print  "requirement of co-occurrence of all alignments among character in the datasets representing SM and TM is violated\n";
-#         die;
-#      }
-#   }
 
 
 for $rep (keys %m_obs)
@@ -1365,7 +1354,7 @@ for $FNC (sort {$a cmp $b} keys %REPORT)
    print VIVOD "\n";
 }
 
-################################################################################à
+################################################################################Ã 
 #Spearman
 #################################################################################
 
