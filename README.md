@@ -112,19 +112,12 @@ the default GGg function to be used in calculation of TSC. If GG statistic was n
 test_stage1.pl script, the option should not be used.
 
 Note 1: The script requires test\_stage1.pl output file names to be in a certain format.
-
 If the empirical model is represented by a biological dataset then the file names should be in
-
 the following format: \*simulation\_model[MODELNAME]\*.extension
-
 If the empirical model(s) is/are represented by a distribution of replicates then the file names should
-
 be in the following format: \*simulation\_model[MODELNAME1].vs.empirical\_model[MODELNAME2]\*.extension
-
 wherein &quot;\*&quot; is a wildcard character. MODELNAME and MODELNAME1 designate the evolutionary model
-
 which fit to the observed data should be estimated (SM). MODELNAME2 designate the evolutionary model
-
 used to generate the observed data (EM).
 
 
