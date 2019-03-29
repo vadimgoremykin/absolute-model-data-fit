@@ -143,27 +143,27 @@ An example of the table is provided below:
 
 Models sorted in ascending order of test values:
 
-<pre>
-model: 10GTR__G test value: 7.00545534776865\
-model: 16GTR__G test value: 28.7464343080381\
-model: 11GTR__G test value: 49.2098367539291\
-model: 12GTR__G test value: 103.722078030946\
-model: 13GTR__G test value: 107.448315458472\
-model: 14GTR__G test value: 107.644576777394\
-model: 15GTR__G test value: 114.689475486713\
-model: 10HKY__G test value: 120.975080017367\
-model: 16HKY__G test value: 542.089439902632\
-model: 11HKY__G test value: 913.838186742487\
-model: 10GTR__N test value: 1341.15917604558\
-model: 12HKY__G test value: 1915.9724144655\
-model: 14HKY__G test value: 1948.66018133137\
-model: 13HKY__G test value: 1985.93211472103\
-model: 15HKY__G test value: 2137.84559966153\
-model: 16GTR__N test value: 6032.01897648639\
-model: 11GTR__N test value: 10257.8384430192\
-model: 13GTR__N test value: 22290.6543232418\
-model: 12GTR__N test value: 22342.3701793176\
-model: 14GTR__N test value: 24024.3092445402\
+
+model: 10GTR__G test value: 7.00545534776865
+model: 16GTR__G test value: 28.7464343080381
+model: 11GTR__G test value: 49.2098367539291
+model: 12GTR__G test value: 103.722078030946
+model: 13GTR__G test value: 107.448315458472
+model: 14GTR__G test value: 107.644576777394
+model: 15GTR__G test value: 114.689475486713
+model: 10HKY__G test value: 120.975080017367
+model: 16HKY__G test value: 542.089439902632
+model: 11HKY__G test value: 913.838186742487
+model: 10GTR__N test value: 1341.15917604558
+model: 12HKY__G test value: 1915.9724144655
+model: 14HKY__G test value: 1948.66018133137
+model: 13HKY__G test value: 1985.93211472103
+model: 15HKY__G test value: 2137.84559966153
+model: 16GTR__N test value: 6032.01897648639
+model: 11GTR__N test value: 10257.8384430192
+model: 13GTR__N test value: 22290.6543232418
+model: 12GTR__N test value: 22342.3701793176
+model: 14GTR__N test value: 24024.3092445402
 model: 15GTR__N test value: 24934.9691206518
 </pre>
 
