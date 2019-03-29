@@ -43,30 +43,31 @@ When the above prerequisites are met, the first stage of the test, performed by 
 script, can be conducted.
 
 If called without arguments, the script outputs instructions for program execution:
-
+<pre>
 test_stage1.pl (v. 1.0) script calculates:
 
--TTC value                          ("Tvalue_TTC" in the output file),\
--Default GGg-based component of TC1 ("Tvalue_GGg" in the output file),\
--Full Gelfand-Ghosh statistic       ("Tvalue_GGf" in the output file)\
+-TTC value                          ("Tvalue_TTC" in the output file), 
+-Default GGg-based component of TC1 ("Tvalue_GGg" in the output file),
+-Full Gelfand-Ghosh statistic       ("Tvalue_GGf" in the output file)
 for the test of absolute model-data fit (Goremykin (2019)).
 
 command line synopsis:
 
--i name of a file containing observed alignment(s) in fasta or sequential phylip format (1 sequence per line)\
--r name of a file containing parametric replicates in fasta or sequential phylip format (1 sequence per line)\
--t list of filenames of model tree files, in newick format, one tree file name per line\
--o output file name. If subsequent analyzes with the test_stage2.pl script should be conducted, please make\
-   the output file names compatible with the format that the test_stage2.pl script requires (described when\
-   the test_stage2.pl script is called without arguments)\
--s (optional) alphabet type\
-   "-s dna":  DNA alphabet\
-   "-s prot": Protein alphabet\
-   "-s ry":   alphabet which has R and Y characters only\
-   Note: The performance of the test has been tested with DNA data alphabet only. Other options are added for\
-   exploratory purposes. If the alphabet type is not specified, the script assumes the DNA alphabet by default.\
--p (optional) sets a P factor value (default 10,000)\
+-i name of a file containing observed alignment(s) in fasta or sequential phylip format (1 sequence per line)
+-r name of a file containing parametric replicates in fasta or sequential phylip format (1 sequence per line)
+-t list of filenames of model tree files, in newick format, one tree file name per line
+-o output file name. If subsequent analyzes with the test_stage2.pl script should be conducted, please make 
+   the output file names compatible with the format that the test_stage2.pl script requires (described when 
+   the test_stage2.pl script is called without arguments)
+-s (optional) alphabet type
+   "-s dna":  DNA alphabet
+   "-s prot": Protein alphabet
+   "-s ry":   alphabet which has R and Y characters only
+   Note: The performance of the test has been tested with DNA data alphabet only. Other options are added for
+   exploratory purposes. If the alphabet type is not specified, the script assumes the DNA alphabet by default.
+-p (optional) sets a P factor value (default 10,000)
 -g (optional) enables calculation of full Gelfand and Ghosh statistic
+</pre>
 __________
 
 ## Output format of test_stage1.pl script
