@@ -71,7 +71,7 @@ __________
 
 # Output format of test_stage1.pl script
 
-in the case of EM representation by alignment of biological sequences, each output file has the following format:
+In the case of EM representation by alignment of biological sequences, each output file has the following format:
 
 <pre>
 Tvalue_GGf: 959.309695708264\
@@ -85,10 +85,11 @@ Tvalue_GGg is GGg statistic related to substitution model fit which is a compone
 Tvalue_TTC is the statistic for the test of tree component (TTC)
 
 In the case of EM representation by a distribution of replicates, each output file has the following format:
-
+<pre>
 Tvalue_GGf: 959.309695708264 782.938618148101\
 Tvalue_GGg: 294.473066605363 118.101989045201\
 Tvalue_TTC: 0.0210386510130374 0.0263469766498732
+</pre>
 
 The leftmost values represent above statistics calculated based on replicate 1, the next values\
 represent above statistics calculated based on replicate 2, etc.
