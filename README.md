@@ -178,28 +178,6 @@ showed better fit to EM-based replicates in comparison to any other SM.
 
 Shown are the mean test values estimated in comparisons of each SM to each EM-based replicate.
 
-EM:10GTR__G SM:10GTR__G test value:7.9536552972                   MS1: N/A\
-EM:10GTR__G SM:16GTR__G test value:28.9420718756                  MS1: 100.0\
-EM:10GTR__G SM:11GTR__G test value:49.0069959436                  MS1: 100.0\
-EM:10GTR__G SM:12GTR__G test value:95.9038204760                  MS1: 100.0\
-EM:10GTR__G SM:13GTR__G test value:107.4520615314                 MS1: 100.0\
-EM:10GTR__G SM:14GTR__G test value:110.7371941324                 MS1: 100.0\
-EM:10GTR__G SM:15GTR__G test value:112.5031444522                 MS1: 100.0\
-EM:10GTR__G SM:10HKY__G test value:136.4757790546                 MS1: 100.0\
-EM:10GTR__G SM:16HKY__G test value:562.2581473864                 MS1: 100.0\
-EM:10GTR__G SM:11HKY__G test value:919.8166452323                 MS1: 100.0\
-EM:10GTR__G SM:10GTR__N test value:1331.8883894357                MS1: 100.0\
-EM:10GTR__G SM:12HKY__G test value:1814.5569774804                MS1: 100.0\
-EM:10GTR__G SM:13HKY__G test value:2037.6335797516                MS1: 100.0\
-EM:10GTR__G SM:14HKY__G test value:2054.4223711852                MS1: 100.0\
-EM:10GTR__G SM:15HKY__G test value:2140.2748792433                MS1: 100.0\
-EM:10GTR__G SM:16GTR__N test value:6167.9382428951                MS1: 100.0\
-EM:10GTR__G SM:11GTR__N test value:10141.4400140610               MS1: 100.0\
-EM:10GTR__G SM:12GTR__N test value:20835.4701148395               MS1: 100.0\
-EM:10GTR__G SM:13GTR__N test value:22429.3271299974               MS1: 100.0\
-EM:10GTR__G SM:15GTR__N test value:24421.7637117566               MS1: 100.0\
-EM:10GTR__G SM:14GTR__N test value:24514.6916720335               MS1: 100.0
-
 EM:11GTR__G SM:11GTR__G test value:10.9878731993                  MS1: N/A\
 EM:11GTR__G SM:16GTR__G test value:27.6538934487                  MS1: 100.0\
 EM:11GTR__G SM:12GTR__G test value:47.0590774977                  MS1: 100.0\
@@ -230,30 +208,6 @@ substitution model scheme, (termed 'preferred model') showed better fit to EM-ba
 in comparison to any other SM assuming the same substitution model scheme as the preferred model.
 
 Shown are the mean test values estimated in comparisons of each SM to each EM-based replicate.
-
-EM:10GTR__G SM:10GTR__G test value:7.9536552972                   MS2: N/A\
-EM:10GTR__G SM:16GTR__G test value:28.9420718756                  MS2: 100.0\
-EM:10GTR__G SM:11GTR__G test value:49.0069959436                  MS2: 100.0\
-EM:10GTR__G SM:12GTR__G test value:95.9038204760                  MS2: 100.0\
-EM:10GTR__G SM:13GTR__G test value:107.4520615314                 MS2: 100.0\
-EM:10GTR__G SM:14GTR__G test value:110.7371941324                 MS2: 100.0\
-EM:10GTR__G SM:15GTR__G test value:112.5031444522                 MS2: 100.0
-
-EM:10GTR__G SM:10GTR__N test value:1331.8883894357                MS2: N/A\
-EM:10GTR__G SM:16GTR__N test value:6167.9382428951                MS2: 100.0\
-EM:10GTR__G SM:11GTR__N test value:10141.4400140610               MS2: 100.0\
-EM:10GTR__G SM:12GTR__N test value:20835.4701148395               MS2: 100.0\
-EM:10GTR__G SM:13GTR__N test value:22429.3271299974               MS2: 100.0\
-EM:10GTR__G SM:15GTR__N test value:24421.7637117566               MS2: 100.0\
-EM:10GTR__G SM:14GTR__N test value:24514.6916720335               MS2: 100.0
-
-EM:10GTR__G SM:10HKY__G test value:136.4757790546                 MS2: N/A\
-EM:10GTR__G SM:16HKY__G test value:562.2581473864                 MS2: 100.0\
-EM:10GTR__G SM:11HKY__G test value:919.8166452323                 MS2: 100.0\
-EM:10GTR__G SM:12HKY__G test value:1814.5569774804                MS2: 100.0\
-EM:10GTR__G SM:13HKY__G test value:2037.6335797516                MS2: 100.0\
-EM:10GTR__G SM:14HKY__G test value:2054.4223711852                MS2: 100.0\
-EM:10GTR__G SM:15HKY__G test value:2140.2748792433                MS2: 100.0
 
 EM:11GTR__G SM:11GTR__G test value:10.9878731993                  MS2: N/A\
 EM:11GTR__G SM:16GTR__G test value:27.6538934487                  MS2: 100.0\
@@ -297,7 +251,6 @@ Subtable 1
 
 |               | GTR__G  | HKY__G  | GTR__N  |
 | ------------- |:------- |:------- |:------- |
-| EM:10GTR__G   |    1    |    1    | 1       |
 | EM:11GTR__G   |    1    |    1    | 1       |
 
 
@@ -305,14 +258,12 @@ Subtable 2
 
 |               | GTR__G  | HKY__G  | GTR__N  |
 | ------------- |:------- |:------- |:------- |
-| EM:10GTR__G   |    8    | 136     | 1332    |
 | EM:11GTR__G   |    11   | 166     | 1657    |
 
 Subtable 3
 
 |               | GTR__G  | HKY__G  | GTR__N  |
 | ------------- |:------- |:------- |:------- |
-| EM:10GTR__G   | 100	  | 100     | 100     |
 | EM:11GTR__G   | 100	  | 100     | 100     |
 
 
