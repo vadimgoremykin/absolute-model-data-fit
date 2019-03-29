@@ -100,6 +100,7 @@ in the directory containing the files produced by test_stage1.pl script.
 
 If called without arguments, the script outputs instructions for program execution:
 
+<pre>
 test_stage2.pl (v. 1.0) script calculates the test values based on the data produced by test_stage1.pl\
 script and provides a summary of the test results.
 
@@ -134,7 +135,7 @@ Note 2: In the comparisons involving representation of the observed data by repl
 - All EMs should share a distinct substitution model component (e.g. GTR+GI). 
 - Each of tree codes should designate the same, distinct tree topology. 
 - EM model tree topologies should be present in the T set.
-
+</pre>
 __________
 
 Output format of test_stage2.pl script:
