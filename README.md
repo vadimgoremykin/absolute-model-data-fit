@@ -143,6 +143,7 @@ An example of the table is provided below:
 
 Models sorted in ascending order of test values:
 
+<pre>
 model: 10GTR__G test value: 7.00545534776865\
 model: 16GTR__G test value: 28.7464343080381\
 model: 11GTR__G test value: 49.2098367539291\
@@ -164,6 +165,7 @@ model: 13GTR__N test value: 22290.6543232418\
 model: 12GTR__N test value: 22342.3701793176\
 model: 14GTR__N test value: 24024.3092445402\
 model: 15GTR__N test value: 24934.9691206518
+</pre>
 
 Best model is 10GTR__G, test value: 7.00545534776865 
 __________
