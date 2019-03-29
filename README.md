@@ -141,13 +141,12 @@ a table containing SM-specific T values sorted in ascending order and correspond
 The best fitting SM is the one with the lowest T value.\
 An example of the table is provided below:
 
-Models sorted in ascending order of test values:
+Models sorted in ascending order of test values::
 
-
-.. code-block:: txt
- model: 10GTR__G test value: 7.00545534776865
- model: 16GTR__G test value: 28.7464343080381
- model: 11GTR__G test value: 49.2098367539291
+  model: 10GTR__G test value: 7.00545534776865
+  model: 16GTR__G test value: 28.7464343080381
+  model: 11GTR__G test value: 49.2098367539291
+  
  model: 12GTR__G test value: 103.722078030946
  model: 13GTR__G test value: 107.448315458472
  model: 14GTR__G test value: 107.644576777394
