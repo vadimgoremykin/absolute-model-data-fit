@@ -1,6 +1,6 @@
 # absolute-model-data-fit
 
-
+# General Descriptions
 
 The repository contains Perl scripts for assessment of absolute fit of evolutionary models -\
 test_stage1.pl and test_stage2.pl published in (place for citation).\
@@ -69,13 +69,15 @@ command line synopsis:
 -g (optional) enables calculation of full Gelfand and Ghosh statistic
 __________
 
-Output format of test_stage1.pl script
+# Output format of test_stage1.pl script
 
 in the case of EM representation by alignment of biological sequences, each output file has the following format:
 
+<pre>
 Tvalue_GGf: 959.309695708264\
 Tvalue_GGg: 294.473066605363\
 Tvalue_TTC: 0.0210386510130374
+</pre>
 
 wherein:\
 Tvalue_GGf is full Gelfand and Ghosh statistic (which can be optionally calculated by test_stage1.pl).\
