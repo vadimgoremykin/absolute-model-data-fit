@@ -101,37 +101,37 @@ in the directory containing the files produced by test_stage1.pl script.
 If called without arguments, the script outputs instructions for program execution:
 
 <pre>
-test_stage2.pl (v. 1.0) script calculates the test values based on the data produced by test_stage1.pl\
+test_stage2.pl (v. 1.0) script calculates the test values based on the data produced by test_stage1.pl
 script and provides a summary of the test results.
 
 synopsis: test_stage2.pl argument1 argument2 > result
 
-argument1: a file produced using the following command line:\
-"grep Tvalue *.extension > file", wherein *.extension is a common extension of the\
+argument1: a file produced using the following command line:
+"grep Tvalue *.extension > file", wherein *.extension is a common extension of the
 output files produced by the test_stage1.pl script
 
-argument2 (optional): -g\
-Specifies the full Gelfand-Ghosh (GG = GGg + GGp) estimator of substitution model fit instead of\
-the default GGg function to be used in calculation of TSC. If GG statistic was not calculated by\
+argument2 (optional): -g 
+Specifies the full Gelfand-Ghosh (GG = GGg + GGp) estimator of substitution model fit instead of
+the default GGg function to be used in calculation of TSC. If GG statistic was not calculated by
 test_stage1.pl script, the option should not be used.
 
-Note 1: The script requires test\_stage1.pl output file names to be in a certain format.\
-If the empirical model is represented by a biological dataset then the file names should be in\
-the following format: \*simulation\_model[MODELNAME]\*.extension\
-If the empirical model(s) is/are represented by a distribution of replicates then the file names should\
-be in the following format: \*simulation\_model[MODELNAME1].vs.empirical\_model[MODELNAME2]\*.extension\
-wherein &quot;\*&quot; is a wildcard character. MODELNAME and MODELNAME1 designate the evolutionary model\
-which fit to the observed data should be estimated (SM). MODELNAME2 designate the evolutionary model\
+Note 1: The script requires test_stage1.pl output file names to be in a certain format.
+If the empirical model is represented by a biological dataset then the file names should be in
+the following format: *simulation_model[MODELNAME]*.extension
+If the empirical model(s) is/are represented by a distribution of replicates then the file names should
+be in the following format: *simulation_model[MODELNAME1].vs.empirical_model[MODELNAME2]*.extension
+wherein "*" is a wildcard character. MODELNAME and MODELNAME1 designate the evolutionary model 
+which fit to the observed data should be estimated (SM). MODELNAME2 designate the evolutionary model 
 used to generate the observed data (EM).
 
-Each MODELNAME, MODELNAME1 and MODELNAME2 should be 8 characters in length, of which the first\
-two are digits (tree code), designating model tree topology and the rest 6 characters designate\
+Each MODELNAME, MODELNAME1 and MODELNAME2 should be 8 characters in length, of which the first 
+two are digits (tree code), designating model tree topology and the rest 6 characters designate 
 the substitution model used to generate the corresponding replicates, for example: 10GTR+GI
 
 Note 2: In the comparisons involving representation of the observed data by replicates:
-- The set of model tree topologies (T set) should be the same for all sets of SMs assuming different 
+- The set of model tree topologies (T set) should be the same for all sets of SMs assuming different
   substitution model specifications. 
-- The set of SMs which shares substitution model specification with EM(s) should be included into analysis. 
+- The set of SMs which shares substitution model specification with EM(s) should be included into analysis.
 - All EMs should share a distinct substitution model component (e.g. GTR+GI). 
 - Each of tree codes should designate the same, distinct tree topology. 
 - EM model tree topologies should be present in the T set.
