@@ -69,25 +69,25 @@ command line synopsis:
 -g (optional) enables calculation of full Gelfand and Ghosh statistic
 __________
 
-# Output format of test_stage1.pl script
+## Output format of test_stage1.pl script
 
 In the case of EM representation by alignment of biological sequences, each output file has the following format:
 
 <pre>
-Tvalue_GGf: 959.309695708264\
-Tvalue_GGg: 294.473066605363\
+Tvalue_GGf: 959.309695708264
+Tvalue_GGg: 294.473066605363
 Tvalue_TTC: 0.0210386510130374
 </pre>
 
-wherein:\
+wherein\
 Tvalue_GGf is full Gelfand and Ghosh statistic (which can be optionally calculated by test_stage1.pl).\
 Tvalue_GGg is GGg statistic related to substitution model fit which is a component of Gelfand and Ghosh statistics.\
 Tvalue_TTC is the statistic for the test of tree component (TTC)
 
 In the case of EM representation by a distribution of replicates, each output file has the following format:
 <pre>
-Tvalue_GGf: 959.309695708264 782.938618148101\
-Tvalue_GGg: 294.473066605363 118.101989045201\
+Tvalue_GGf: 959.309695708264 782.938618148101
+Tvalue_GGg: 294.473066605363 118.101989045201
 Tvalue_TTC: 0.0210386510130374 0.0263469766498732
 </pre>
 
@@ -138,141 +138,222 @@ Note 2: In the comparisons involving representation of the observed data by repl
 </pre>
 __________
 
-Output format of test_stage2.pl script:
+## Output format of test_stage2.pl script:
 
 If the empirical model (EM) is represented by one multiple sequence alignment, the test_stage2.pl outputs\
 a table containing SM-specific T values sorted in ascending order and corresponding SM designations.\
 The best fitting SM is the one with the lowest T value.\
 An example of the table is provided below:
+<pre>
+Models sorted in ascending order of test values:
 
-Models sorted in ascending order of test values::
+model: 01GTR__G test value: 9.70621128145248
+model: 06GTR__G test value: 30.2441944724801
+model: 02GTR__G test value: 52.2497963338031
+model: 00GTR__G test value: 70.1421896913065
+model: 05GTR__G test value: 73.7327087626689
+model: 03GTR__G test value: 82.0476285634358
+model: 04GTR__G test value: 102.398613282223
+model: 01HKY__G test value: 109.19558277688
+model: 06HKY__G test value: 338.873451163983
+model: 02HKY__G test value: 635.477869764894
+model: 00HKY__G test value: 799.198135964537
+model: 05HKY__G test value: 884.310360882033
+model: 03HKY__G test value: 985.961996439379
+model: 01GTR__N test value: 1142.71318611374
+model: 04HKY__G test value: 1185.95209639336
+model: 06GTR__N test value: 3267.56071521021
+model: 02GTR__N test value: 8521.58326286598
+model: 00GTR__N test value: 9148.72398428291
+model: 05GTR__N test value: 11425.65357173
+model: 03GTR__N test value: 11523.9529561606
+model: 04GTR__N test value: 14349.9732396072
 
-  model: 10GTR__G test value: 7.00545534776865
-  model: 16GTR__G test value: 28.7464343080381
-  model: 11GTR__G test value: 49.2098367539291
-  
- model: 12GTR__G test value: 103.722078030946
- model: 13GTR__G test value: 107.448315458472
- model: 14GTR__G test value: 107.644576777394
- model: 15GTR__G test value: 114.689475486713
- model: 10HKY__G test value: 120.975080017367
- model: 16HKY__G test value: 542.089439902632
- model: 11HKY__G test value: 913.838186742487
- model: 10GTR__N test value: 1341.15917604558
- model: 12HKY__G test value: 1915.9724144655
- model: 14HKY__G test value: 1948.66018133137
- model: 13HKY__G test value: 1985.93211472103
- model: 15HKY__G test value: 2137.84559966153
- model: 16GTR__N test value: 6032.01897648639
- model: 11GTR__N test value: 10257.8384430192
- model: 13GTR__N test value: 22290.6543232418
- model: 12GTR__N test value: 22342.3701793176
- model: 14GTR__N test value: 24024.3092445402
- model: 15GTR__N test value: 24934.9691206518
-
-
-Best model is 10GTR__G, test value: 7.00545534776865 
+Best model is 11GTR__G, test value: 9.70621128145248
+</pre>
 __________
 
 If the empirical model (EM) is represented by replicates, the test_stage2.pl outputs a self-explanatory\
 table which has three parts. An example of the table is provided below:
-
+<pre>
 PART 1. Comparison of all simulation models (SMs) to each empirical model (EM)
 
-MS1 values indicate percentage of times when the SM assuming EM tree topology + EM substitution model\
+MS1 values indicate percentage of times when the SM assuming EM tree topology + EM substitution model
 showed better fit to EM-based replicates in comparison to any other SM.
 
 Shown are the mean test values estimated in comparisons of each SM to each EM-based replicate.
 
-EM:11GTR__G SM:11GTR__G test value:10.9878731993                  MS1: N/A\
-EM:11GTR__G SM:16GTR__G test value:27.6538934487                  MS1: 100.0\
-EM:11GTR__G SM:12GTR__G test value:47.0590774977                  MS1: 100.0\
-EM:11GTR__G SM:10GTR__G test value:59.7485197459                  MS1: 100.0\
-EM:11GTR__G SM:15GTR__G test value:61.2800660671                  MS1: 100.0\
-EM:11GTR__G SM:13GTR__G test value:69.1213271538                  MS1: 100.0\
-EM:11GTR__G SM:14GTR__G test value:84.5152367685                  MS1: 100.0\
-EM:11GTR__G SM:11HKY__G test value:165.9773344128                 MS1: 100.0\
-EM:11GTR__G SM:16HKY__G test value:408.7807462001                 MS1: 100.0\
-EM:11GTR__G SM:12HKY__G test value:729.4230790075                 MS1: 100.0\
-EM:11GTR__G SM:10HKY__G test value:899.1315594127                 MS1: 100.0\
-EM:11GTR__G SM:15HKY__G test value:935.1123931735                 MS1: 100.0\
-EM:11GTR__G SM:13HKY__G test value:1062.7946341026                MS1: 100.0\
-EM:11GTR__G SM:14HKY__G test value:1260.7747463272                MS1: 100.0\
-EM:11GTR__G SM:11GTR__N test value:1656.8597144909                MS1: 100.0\
-EM:11GTR__G SM:16GTR__N test value:3860.5662158918                MS1: 100.0\
-EM:11GTR__G SM:12GTR__N test value:9171.2265222537                MS1: 100.0\
-EM:11GTR__G SM:10GTR__N test value:9750.9502802821                MS1: 100.0\
-EM:11GTR__G SM:15GTR__N test value:11285.8252479354               MS1: 100.0\
-EM:11GTR__G SM:13GTR__N test value:11621.6905898025               MS1: 100.0\
-EM:11GTR__G SM:14GTR__N test value:14377.3317896123               MS1: 100.0
+EM:01GTR__G SM:01GTR__G test value:10.9878731993                  MS1: N/A
+EM:01GTR__G SM:06GTR__G test value:27.6538934487                  MS1: 100.0
+EM:01GTR__G SM:02GTR__G test value:47.0590774977                  MS1: 100.0
+EM:01GTR__G SM:00GTR__G test value:59.7485197459                  MS1: 100.0
+EM:01GTR__G SM:05GTR__G test value:61.2800660671                  MS1: 100.0
+EM:01GTR__G SM:03GTR__G test value:69.1213271538                  MS1: 100.0
+EM:01GTR__G SM:04GTR__G test value:84.5152367685                  MS1: 100.0
+EM:01GTR__G SM:01HKY__G test value:165.9773344128                 MS1: 100.0
+EM:01GTR__G SM:06HKY__G test value:408.7807462001                 MS1: 100.0
+EM:01GTR__G SM:02HKY__G test value:729.4230790075                 MS1: 100.0
+EM:01GTR__G SM:00HKY__G test value:899.1315594127                 MS1: 100.0
+EM:01GTR__G SM:05HKY__G test value:935.1123931735                 MS1: 100.0
+EM:01GTR__G SM:03HKY__G test value:1062.7946341026                MS1: 100.0
+EM:01GTR__G SM:04HKY__G test value:1260.7747463272                MS1: 100.0
+EM:01GTR__G SM:01GTR__N test value:1656.8597144909                MS1: 100.0
+EM:01GTR__G SM:06GTR__N test value:3860.5662158918                MS1: 100.0
+EM:01GTR__G SM:02GTR__N test value:9171.2265222537                MS1: 100.0
+EM:01GTR__G SM:00GTR__N test value:9750.9502802821                MS1: 100.0
+EM:01GTR__G SM:05GTR__N test value:11285.8252479354               MS1: 100.0
+EM:01GTR__G SM:03GTR__N test value:11621.6905898025               MS1: 100.0
+EM:01GTR__G SM:04GTR__N test value:14377.3317896123               MS1: 100.0
 
-PART 2. Comparison of fit of simulation models sharing common substitution model scheme\
+PART 2. Comparison of fit of simulation models sharing common substitution model scheme
 but assuming different model tree topologies
 
-MS2 values indicate percentage of times when the SM assuming EM tree topology and a certain\
-substitution model scheme, (termed 'preferred model') showed better fit to EM-based replicates\
+MS2 values indicate percentage of times when the SM assuming EM tree topology and a certain
+substitution model scheme, (termed 'preferred model') showed better fit to EM-based replicates
 in comparison to any other SM assuming the same substitution model scheme as the preferred model.
 
 Shown are the mean test values estimated in comparisons of each SM to each EM-based replicate.
 
-EM:11GTR__G SM:11GTR__G test value:10.9878731993                  MS2: N/A\
-EM:11GTR__G SM:16GTR__G test value:27.6538934487                  MS2: 100.0\
-EM:11GTR__G SM:12GTR__G test value:47.0590774977                  MS2: 100.0\
-EM:11GTR__G SM:10GTR__G test value:59.7485197459                  MS2: 100.0\
-EM:11GTR__G SM:15GTR__G test value:61.2800660671                  MS2: 100.0\
-EM:11GTR__G SM:13GTR__G test value:69.1213271538                  MS2: 100.0\
-EM:11GTR__G SM:14GTR__G test value:84.5152367685                  MS2: 100.0
+EM:01GTR__G SM:01GTR__G test value:10.9878731993                  MS2: N/A
+EM:01GTR__G SM:06GTR__G test value:27.6538934487                  MS2: 100.0
+EM:01GTR__G SM:02GTR__G test value:47.0590774977                  MS2: 100.0
+EM:01GTR__G SM:00GTR__G test value:59.7485197459                  MS2: 100.0
+EM:01GTR__G SM:05GTR__G test value:61.2800660671                  MS2: 100.0
+EM:01GTR__G SM:03GTR__G test value:69.1213271538                  MS2: 100.0
+EM:01GTR__G SM:04GTR__G test value:84.5152367685                  MS2: 100.0
 
-EM:11GTR__G SM:11GTR__N test value:1656.8597144909                MS2: N/A\
-EM:11GTR__G SM:16GTR__N test value:3860.5662158918                MS2: 100.0\
-EM:11GTR__G SM:12GTR__N test value:9171.2265222537                MS2: 100.0\
-EM:11GTR__G SM:10GTR__N test value:9750.9502802821                MS2: 100.0\
-EM:11GTR__G SM:15GTR__N test value:11285.8252479354               MS2: 100.0\
-EM:11GTR__G SM:13GTR__N test value:11621.6905898025               MS2: 100.0\
-EM:11GTR__G SM:14GTR__N test value:14377.3317896123               MS2: 100.0
+EM:01GTR__G SM:01GTR__N test value:1656.8597144909                MS2: N/A
+EM:01GTR__G SM:06GTR__N test value:3860.5662158918                MS2: 100.0
+EM:01GTR__G SM:02GTR__N test value:9171.2265222537                MS2: 100.0
+EM:01GTR__G SM:00GTR__N test value:9750.9502802821                MS2: 100.0
+EM:01GTR__G SM:05GTR__N test value:11285.8252479354               MS2: 100.0
+EM:01GTR__G SM:03GTR__N test value:11621.6905898025               MS2: 100.0
+EM:01GTR__G SM:04GTR__N test value:14377.3317896123               MS2: 100.0
 
-EM:11GTR__G SM:11HKY__G test value:165.9773344128                 MS2: N/A\
-EM:11GTR__G SM:16HKY__G test value:408.7807462001                 MS2: 100.0\
-EM:11GTR__G SM:12HKY__G test value:729.4230790075                 MS2: 100.0\
-EM:11GTR__G SM:10HKY__G test value:899.1315594127                 MS2: 100.0\
-EM:11GTR__G SM:15HKY__G test value:935.1123931735                 MS2: 100.0\
-EM:11GTR__G SM:13HKY__G test value:1062.7946341026                MS2: 100.0\
-EM:11GTR__G SM:14HKY__G test value:1260.7747463272                MS2: 100.0
+EM:01GTR__G SM:01HKY__G test value:165.9773344128                 MS2: N/A
+EM:01GTR__G SM:06HKY__G test value:408.7807462001                 MS2: 100.0
+EM:01GTR__G SM:02HKY__G test value:729.4230790075                 MS2: 100.0
+EM:01GTR__G SM:00HKY__G test value:899.1315594127                 MS2: 100.0
+EM:01GTR__G SM:05HKY__G test value:935.1123931735                 MS2: 100.0
+EM:01GTR__G SM:03HKY__G test value:1062.7946341026                MS2: 100.0
+EM:01GTR__G SM:04HKY__G test value:1260.7747463272                MS2: 100.0
+
 
 PART 3. Summary of the results
 
--Subtable 1 shows success (1) or failure (0) of identification of a preferred SM\
-- sharing model tree topology with the EM - by the mean test values in comparison to all SMs\
+-Subtable 1 shows success (1) or failure (0) of identification of a preferred SM
+- sharing model tree topology with the EM - by the mean test values in comparison to all SMs
 which share a common substitution model scheme (shown above the subtable) with the preferred SM.
 
--Subtable 2 shows the mean test values for the preferred SMs assuming substitution\
+-Subtable 2 shows the mean test values for the preferred SMs assuming substitution
 model components shown above the subtable.
 
--Subtable 3 shows the worst model separation (MS2) values between the preferred SM\
-and any other SM which assumes the same substitution model scheme (shown above the subtable)\
-as the preferred SM, but different model tree topology.\
+-Subtable 3 shows the worst model separation (MS2) values between the preferred SM
+and any other SM which assumes the same substitution model scheme (shown above the subtable)
+as the preferred SM, but different model tree topology.
 See PART2 of the report (above) for the full list of MS2 values.
 
 Subtable 1
-
-|               | GTR__G  | HKY__G  | GTR__N  |
-| ------------- |:------- |:------- |:------- |
-| EM:11GTR__G   |    1    |    1    | 1       |
-
+		GTR__G	HKY__G	GTR__N	
+EM:01GTR__G	1	1	1	
 
 Subtable 2
-
-|               | GTR__G  | HKY__G  | GTR__N  |
-| ------------- |:------- |:------- |:------- |
-| EM:11GTR__G   |    11   | 166     | 1657    |
+		GTR__G	HKY__G	GTR__N	
+EM:01GTR__G	11	166	1657	
 
 Subtable 3
-
-|               | GTR__G  | HKY__G  | GTR__N  |
-| ------------- |:------- |:------- |:------- |
-| EM:11GTR__G   | 100	  | 100     | 100     |
-
-
+		GTR__G	HKY__G	GTR__N	
+EM 01GTR__G	100	100	100	
 
 The mean over values in above subtable is: 100.00
+PART 1. Comparison of all simulation models (SMs) to each empirical model (EM)
 
+MS1 values indicate percentage of times when the SM assuming EM tree topology + EM substitution model
+showed better fit to EM-based replicates in comparison to any other SM.
+
+Shown are the mean test values estimated in comparisons of each SM to each EM-based replicate.
+
+EM:01GTR__G SM:01GTR__G test value:10.9878731993                  MS1: N/A
+EM:01GTR__G SM:06GTR__G test value:27.6538934487                  MS1: 100.0
+EM:01GTR__G SM:02GTR__G test value:47.0590774977                  MS1: 100.0
+EM:01GTR__G SM:00GTR__G test value:59.7485197459                  MS1: 100.0
+EM:01GTR__G SM:05GTR__G test value:61.2800660671                  MS1: 100.0
+EM:01GTR__G SM:03GTR__G test value:69.1213271538                  MS1: 100.0
+EM:01GTR__G SM:04GTR__G test value:84.5152367685                  MS1: 100.0
+EM:01GTR__G SM:01HKY__G test value:165.9773344128                 MS1: 100.0
+EM:01GTR__G SM:06HKY__G test value:408.7807462001                 MS1: 100.0
+EM:01GTR__G SM:02HKY__G test value:729.4230790075                 MS1: 100.0
+EM:01GTR__G SM:00HKY__G test value:899.1315594127                 MS1: 100.0
+EM:01GTR__G SM:05HKY__G test value:935.1123931735                 MS1: 100.0
+EM:01GTR__G SM:03HKY__G test value:1062.7946341026                MS1: 100.0
+EM:01GTR__G SM:04HKY__G test value:1260.7747463272                MS1: 100.0
+EM:01GTR__G SM:01GTR__N test value:1656.8597144909                MS1: 100.0
+EM:01GTR__G SM:06GTR__N test value:3860.5662158918                MS1: 100.0
+EM:01GTR__G SM:02GTR__N test value:9171.2265222537                MS1: 100.0
+EM:01GTR__G SM:00GTR__N test value:9750.9502802821                MS1: 100.0
+EM:01GTR__G SM:05GTR__N test value:11285.8252479354               MS1: 100.0
+EM:01GTR__G SM:03GTR__N test value:11621.6905898025               MS1: 100.0
+EM:01GTR__G SM:04GTR__N test value:14377.3317896123               MS1: 100.0
+
+PART 2. Comparison of fit of simulation models sharing common substitution model scheme
+but assuming different model tree topologies
+
+MS2 values indicate percentage of times when the SM assuming EM tree topology and a certain
+substitution model scheme, (termed 'preferred model') showed better fit to EM-based replicates
+in comparison to any other SM assuming the same substitution model scheme as the preferred model.
+
+Shown are the mean test values estimated in comparisons of each SM to each EM-based replicate.
+
+EM:01GTR__G SM:01GTR__G test value:10.9878731993                  MS2: N/A
+EM:01GTR__G SM:06GTR__G test value:27.6538934487                  MS2: 100.0
+EM:01GTR__G SM:02GTR__G test value:47.0590774977                  MS2: 100.0
+EM:01GTR__G SM:00GTR__G test value:59.7485197459                  MS2: 100.0
+EM:01GTR__G SM:05GTR__G test value:61.2800660671                  MS2: 100.0
+EM:01GTR__G SM:03GTR__G test value:69.1213271538                  MS2: 100.0
+EM:01GTR__G SM:04GTR__G test value:84.5152367685                  MS2: 100.0
+
+EM:01GTR__G SM:01GTR__N test value:1656.8597144909                MS2: N/A
+EM:01GTR__G SM:06GTR__N test value:3860.5662158918                MS2: 100.0
+EM:01GTR__G SM:02GTR__N test value:9171.2265222537                MS2: 100.0
+EM:01GTR__G SM:00GTR__N test value:9750.9502802821                MS2: 100.0
+EM:01GTR__G SM:05GTR__N test value:11285.8252479354               MS2: 100.0
+EM:01GTR__G SM:03GTR__N test value:11621.6905898025               MS2: 100.0
+EM:01GTR__G SM:04GTR__N test value:14377.3317896123               MS2: 100.0
+
+EM:01GTR__G SM:01HKY__G test value:165.9773344128                 MS2: N/A
+EM:01GTR__G SM:06HKY__G test value:408.7807462001                 MS2: 100.0
+EM:01GTR__G SM:02HKY__G test value:729.4230790075                 MS2: 100.0
+EM:01GTR__G SM:00HKY__G test value:899.1315594127                 MS2: 100.0
+EM:01GTR__G SM:05HKY__G test value:935.1123931735                 MS2: 100.0
+EM:01GTR__G SM:03HKY__G test value:1062.7946341026                MS2: 100.0
+EM:01GTR__G SM:04HKY__G test value:1260.7747463272                MS2: 100.0
+
+
+PART 3. Summary of the results
+
+-Subtable 1 shows success (1) or failure (0) of identification of a preferred SM
+- sharing model tree topology with the EM - by the mean test values in comparison to all SMs
+which share a common substitution model scheme (shown above the subtable) with the preferred SM.
+
+-Subtable 2 shows the mean test values for the preferred SMs assuming substitution
+model components shown above the subtable.
+
+-Subtable 3 shows the worst model separation (MS2) values between the preferred SM
+and any other SM which assumes the same substitution model scheme (shown above the subtable)
+as the preferred SM, but different model tree topology.
+See PART2 of the report (above) for the full list of MS2 values.
+
+Subtable 1
+		GTR__G	HKY__G	GTR__N	
+EM:01GTR__G	1	1	1	
+
+Subtable 2
+		GTR__G	HKY__G	GTR__N	
+EM:01GTR__G	11	166	1657	
+
+Subtable 3
+		GTR__G	HKY__G	GTR__N	
+EM 01GTR__G	100	100	100	
+
+The mean over values in above subtable is: 100.00
+</pre>
