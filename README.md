@@ -174,7 +174,7 @@ model: 05GTR__N test value: 11425.65357173
 model: 03GTR__N test value: 11523.9529561606
 model: 04GTR__N test value: 14349.9732396072
 
-Best model is 11GTR__G, test value: 9.70621128145248
+Best model is 01GTR__G, test value: 9.70621128145248
 </pre>
 __________
 
