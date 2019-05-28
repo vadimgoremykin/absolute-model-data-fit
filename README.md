@@ -47,9 +47,12 @@ If called without arguments, the script outputs instructions for program executi
 <pre>
 test_stage1.pl (v. 1.0) script calculates:
 
--TTC value                          ("Tvalue_TTC" in the output file), 
--Default GGg-based component of TC1 ("Tvalue_GGg" in the output file),
--Full Gelfand-Ghosh statistic       ("Tvalue_GGf" in the output file)
+-"A" value, the default GGg-based test statistic for substitution model fit 
+("Tvalue_Ade" in the output file),
+-Full Gelfand-Ghosh statistic, an alternative estimator of substitution model fit 
+("Tvalue_Aal" in the output file)
+-"B" value, the test statistic for evolutionary model fit                                                                    
+("Tvalue_Bvl" in the output file), 
 for the test of absolute model-data fit (Goremykin (2019)).
 
 command line synopsis:
@@ -68,6 +71,7 @@ command line synopsis:
    exploratory purposes. If the alphabet type is not specified, the script assumes the DNA alphabet by default.
 -p (optional) sets a P factor value (default 10,000)
 -g (optional) enables calculation of full Gelfand and Ghosh statistic
+
 </pre>
 __________
 
@@ -76,21 +80,21 @@ __________
 In the case of EM representation by alignment of biological sequences, each output file has the following format:
 
 <pre>
-Tvalue_GGf: 959.309695708264
-Tvalue_GGg: 294.473066605363
-Tvalue_TTC: 0.0210386510130374
+Tvalue_Aal: 959.309695708264
+Tvalue_Ade: 294.473066605363
+Tvalue_Bvl: 0.0210386510130374
 </pre>
 
 wherein\
-Tvalue_GGf is full Gelfand and Ghosh statistic (which can be optionally calculated by test_stage1.pl).\
-Tvalue_GGg is GGg statistic related to substitution model fit which is a component of Gelfand and Ghosh statistics.\
-Tvalue_TTC is the statistic for the test of tree component (TTC)
+Tvalue_Aal is full Gelfand and Ghosh statistic (which can be optionally calculated by test_stage1.pl).\
+Tvalue_Ade is GGg statistic related to substitution model fit which is a component of Gelfand and Ghosh statistics.\
+Tvalue_Bvl is the statistic for the test of tree component (TTC)
 
 In the case of EM representation by a distribution of replicates, each output file has the following format:
 <pre>
-Tvalue_GGf: 959.309695708264 782.938618148101
-Tvalue_GGg: 294.473066605363 118.101989045201
-Tvalue_TTC: 0.0210386510130374 0.0263469766498732
+Tvalue_Aal: 959.309695708264 782.938618148101
+Tvalue_Ade: 294.473066605363 118.101989045201
+Tvalue_Bvl: 0.0210386510130374 0.0263469766498732
 </pre>
 
 The leftmost values represent above statistics calculated based on replicate 1, the next values\
@@ -115,9 +119,9 @@ argument1: a file produced using the following command line:
 output files produced by the test_stage1.pl script
 
 argument2 (optional): -g 
-Specifies the full Gelfand-Ghosh (GG = GGg + GGp) estimator of substitution model fit instead of
-the default GGg function to be used in calculation of TSC. If GG statistic was not calculated by
-test_stage1.pl script, the option should not be used.
+Specifies the full Gelfand-Ghosh (GG = GGg + GGp) statistic instead of the default GGg statistic
+to be used in calculation of substitution model fit. If GG statistic was
+not calculated by test_stage1.pl script, the option should not be used.
 
 Note 1: The script requires test_stage1.pl output file names to be in a certain format.
 If the empirical model is represented by a biological dataset then the file names should be in
