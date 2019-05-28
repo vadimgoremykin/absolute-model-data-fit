@@ -4,9 +4,12 @@ use Carp;
 my $MAN = <<TEXT;
 test_stage1.pl (v. 1.0) script calculates:
 
--TTC value                          ("Tvalue_TTC" in the output file), 
--Default GGg-based component of TC1 ("Tvalue_GGg" in the output file),
--Full Gelfand-Ghosh statistic       ("Tvalue_GGf" in the output file)
+-"A" value, the default GGg-based test statistic for substitution model fit 
+("Tvalue_Ade" in the output file),
+-Full Gelfand-Ghosh statistic, an alternative estimator of substitution model fit 
+("Tvalue_Aal" in the output file)
+-"B" value, the test statistic for evolutionary model fit                                                                    
+("Tvalue_Bvl" in the output file), 
 for the test of absolute model-data fit (Goremykin (2019)).
 
 command line synopsis:
@@ -822,8 +825,8 @@ for $rep (1.. $countreplicas1)
    	       $SCORE_B1+=$SCORE_B;
 	    }
          }
-	 $score_full1{"TTC"}{$rep}{"$split#1"} = $SCORE_A1/$rep_length;	  
-	 $score_full1{"TTC"}{$rep}{"$split#2"} = $SCORE_B1/$rep_length;
+	 $score_full1{"Bvl"}{$rep}{"$split#1"} = $SCORE_A1/$rep_length;	  
+	 $score_full1{"Bvl"}{$rep}{"$split#2"} = $SCORE_B1/$rep_length;
          $SCORE_A1 = 0;  $SCORE_B1 = 0;
       }
    }
@@ -1137,10 +1140,10 @@ for $rep (1.. $countreplicas)
    	       $SCORE_B1+=$SCORE_B;
 	    }
          }
-	 $RESULT_REP3_LINK{"TTC $split#1 $rep"} = $SCORE_A1/$rep_length;  
-	 $RESULT_REP3_LINK{"TTC $split#2 $rep"} = $SCORE_B1/$rep_length;  
-	 $RESULT_REP4_LINK{"TTC $split#1"}++; 
-	 $RESULT_REP4_LINK{"TTC $split#2"}++; 
+	 $RESULT_REP3_LINK{"Bvl $split#1 $rep"} = $SCORE_A1/$rep_length;  
+	 $RESULT_REP3_LINK{"Bvl $split#2 $rep"} = $SCORE_B1/$rep_length;  
+	 $RESULT_REP4_LINK{"Bvl $split#1"}++; 
+	 $RESULT_REP4_LINK{"Bvl $split#2"}++; 
          $SCORE_A1 = 0;  $SCORE_B1 = 0;
       }
    }
@@ -1194,7 +1197,6 @@ else
 }   
    
 
-
 for $rep (keys %m_obs)
 {
    if ($rep == 1)
@@ -1233,7 +1235,7 @@ for $rep1 (keys %number_sites_obs)
    {
       if ($number_sites_obs{$rep1} != $number_sites_rep{$rep2})
       {
-         print  "Alignments representing SM and TM have different lengths\n";
+         print  "Alignments representing EM and SM have different lengths\n";
          die;
       }
       else
@@ -1286,7 +1288,7 @@ for $rep0 (sort {$a <=> $b} keys %BIN)
 
 
    $GGg = 2*$ns*2*(  ($t_m + $t_y)/2 - $t_ref);
-   push @{$REPORT{GGg}}, $GGg;
+   push @{$REPORT{Ade}}, $GGg;
 
 
    if ($fullGG == 1)
@@ -1306,7 +1308,7 @@ for $rep0 (sort {$a <=> $b} keys %BIN)
       }
       $GGp = 2*$ns*(  ((1/$np)*$part2)  - $t_m );
       $GG = $GGp + $GGg;
-      push @{$REPORT{GGf}}, $GG;
+      push @{$REPORT{Aal}}, $GG;
    }
 }
 
@@ -1508,7 +1510,7 @@ sub rank
    {
       $toroot2 = 0 - ($nr1*$sumYY - $sumY*$sumY);
    }
-   $spearman = ($nr1*$sumXY - $sumX*$sumY)/(sqrt($toroot1)*sqrt($toroot2));
+   $spearman = ($nr1*$sumXY - $sumX*$sumY)/(sqrt($toroot1)*sqrt($toroot2)); 
 }
 
 
